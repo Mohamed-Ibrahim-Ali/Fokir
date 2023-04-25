@@ -3,7 +3,7 @@ $(function () {
     'use strict';
 
     $("html").niceScroll({
-        cursorcolor: "#ff305b"
+        cursorcolor: "#119643"
     });
 
 /*Start Scroll*/ 

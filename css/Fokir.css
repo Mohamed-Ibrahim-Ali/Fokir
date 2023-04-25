@@ -5,6 +5,7 @@
 body{
 height: 2000px;
 font-family: 'Source Sans Pro', sans-serif;
+direction: rtl;
 }
 ul{
     list-style: none;
@@ -20,19 +21,17 @@ ul{
     color: #fff;
 }
 .navbar h3{
-    color: #ff305b;
+    color: #fff;
 }
 .navbar a{
-   font-size: 16px;
+   font-size: 22px;
    color: #fff;
 }
-.active a{
-    color: #ff305b;
-}
+
 /*End Nav*/
 /*Start Home*/
 .home{
-    background: url("../img/slider/slider-01.jpg");
+    background: url("../img/slider/LOGO.jpeg");
     background-size: 100% 100%;
 }
 .home .overlay{
@@ -52,7 +51,7 @@ ul{
     margin: 0 0 10px;
 }
 .home .overlay .text h1{
-    color:#ff305b;
+    color:#119643;
     font-size: 70px;
     font-weight: bold;
     text-transform: uppercase;
@@ -72,7 +71,7 @@ ul{
         margin: 0 0 15px;
     }
     .home .overlay .text h1{
-        color:#ff305b;
+        color:#119643;
         font-size: 40px;
         font-weight: bold;
         text-transform: uppercase;
@@ -93,6 +92,7 @@ ul{
 }
 .About .info{
     padding-left: 50px;
+    text-align: center;
 }
 .About .info .con{
     position: relative;
@@ -142,21 +142,24 @@ ul{
    height: 100%;
 }
 .About .info h3{
-    font-size: 34px;
+    font-size: 40px;
     font-weight: 600;
     line-height: 22px;
     margin-bottom: 25px;
     padding-left: 13px;
     position: relative;
     text-transform: uppercase;
+    color: #119643;
 }
 .About .info h3 span{
-    color: #ff305b;
+    color: #119643;
 }
 .About .info p{
     border-bottom: 1px dashed #999999;
     margin-bottom: 25px;
     padding-bottom: 25px;
+    font-size: 35px;
+    font-weight: 800;
 }
 .About .info li{
     color: #555555;
@@ -177,19 +180,20 @@ ul{
     float: left;
     width: 60%;
 }
-.About .info button{
+.About .info a{
     padding: 10px 20px;
     margin: 10px;
     font-size: 18px;
     color: #fff;
-    background: #ff305b;
+    background: #119643;
     border: 0px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s all ease-in;
+    text-decoration: none;
 }
-.About .info button:hover{
-    background: #f00;
+.About .info a:hover{
+    background: #9ba220;
 }
  @media (max-width: 766px){
         .About .info{
@@ -238,17 +242,18 @@ padding-bottom: 50px;
     padding-bottom: 30px;
     position: relative;
     text-transform: capitalize;
+    color: #119643;
 }
 .line{
     height: 5px;
     width: 10%;
-    border-bottom: 1px solid #ff305b;
+    border-bottom: 1px solid #119643;
     margin: 0px auto;
 }
 .longline{
     height: 5px;
     width: 15%;
-    border-bottom: 1px solid #ff305b;
+    border-bottom: 1px solid #119643;
     margin: 0px auto;
 }
 .Service .row .cell{
@@ -262,7 +267,7 @@ padding-bottom: 50px;
     border-radius: 3px;
 }
 .Service .row .cell i{
- color: #ff305b;
+ color: #119643;
  margin: 15px;
 }
 .Service .row .cell h4{
@@ -289,6 +294,7 @@ padding-bottom: 50px;
     margin-bottom: 1px;
     padding-bottom: 30px;
     text-transform: capitalize;
+    color: #119643;
 }
 .head li{
     display: inline-block;
@@ -297,28 +303,35 @@ padding-bottom: 50px;
     cursor: pointer;
 }
 .color{
-    color: #ff305b;
+    color: #119643;
 }
 .Portfolio .row .gal{
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
-}
+} 
 .Portfolio .gal .over{
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 100%;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.6);
-    transition: all 0.3s ease-in-out;
+    transition: 0.5s all ease-in-out !important;
     display: none;
 }
 .Portfolio .row .gal:hover .over{
+    position: absolute;
+    top: 0px;
+    left: 0px;
     display: block;
 }
 .Portfolio .row .gal img{
     width: 100%;
+    height: 300px;
+}
+.Portfolio .row .over img{
+    opacity: 0.7;
 }
 /*End Portfolio*/
 
@@ -331,7 +344,7 @@ padding-bottom: 50px;
     padding: 60px 0;
 }
 .count .sec i{
-    color: #ff305b;
+    color: #119643;
     font-size: 26px;
     margin-bottom: 15px;
 }
@@ -346,153 +359,21 @@ padding-bottom: 50px;
 }
 /*End Count*/
 
-/*Start Testimonial*/
-.test{
-    margin-bottom: 50px;
-}
-.test .owl-carousel{
-    background: #eee;
-    width: 70%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-}
-.test .owl-carousel .col-sm-3{
-    text-align: center;
-}
-.test .owl-carousel .col-sm-3 .pad{
-    margin: 10px;
-    padding-left: 0px;
-}
-.test .owl-carousel .item img{
-    width: 100%;
-    border-radius: 50%;
-}
-.test .owl-carousel .item h3{
-    padding-top: 20px;
-    font-size: 26px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    margin: 0 0 10px;
-    color: #333;
-}
-.test .owl-carousel .item h6{
-    color: #777777;
-    font-size: 15px;
-}
-.test .owl-carousel .item p{
-    font-size: 16px;
-    font-style: italic;
-}
-.test .owl-carousel .item i{
-    color: #f1c30d;
-}
-.owl-theme .owl-nav{
-    display: none;
-}
-.owl-theme .owl-dots .owl-dot span{
-    width: 10px;
-    margin: 40px 7px;
-    background: #ff305b;
-}
-@media (max-width: 766px) {
-    .test .owl-carousel{
-        background: #eee;
-        width: 100%;
-        margin: 0 auto;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    .test .owl-carousel .col-sm-3{
-        text-align: center;
-    }
-    .test .owl-carousel .item img{
-        width: 100%;
-        border-radius: 50%;
-    }
-}
-/*End Testimonial*/
-/*Start Blog*/
-.blog{
-    padding-bottom: 70px;
-    background: #eee;
-    text-transform: capitalize;
-}
-.blog .space{
-    margin: 10px;
-}
-.blog .card a{
-    color: #333333;
-    text-transform: capitalize;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none;
-}
-.blog .card a:hover{
-    color:#ff305b;
-}
-/*End Blog*/
 /*Start Contact*/
 .contact{
 padding-bottom: 50px;
 margin-bottom: 20px;
 }
-.contact form{
-    width: 70%;
-    margin: 0 auto;
+
+.contact img {
+    max-height: 100%;
 }
-.contact form input{
-    width: 45%;
-    margin: 10px 5px;
-    padding: 5px;
-    border-radius: 5px;
-     border: 2px solid #eee;
-}
-.contact form input:nth-of-type(3){
-    width: 92%;
-    border-radius: 5px;
-    border: 2px solid #eee;
-}
-.contact form textarea{
-    margin-top: 10px;
-    width: 92%;
-    height: 100px;
-    border-radius: 5px;
-    border: 2px solid #eee;
-}
-.contact form button{
-    background: #ff305b;
-    color: #fff;
-    padding: 7px 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    transition: all 0.5s ease-in;
-}
-.contact form button:hover{
-    background: #f00;
-}
-@media (max-width: 766px) {
-    .contact form{
-        width: 100%;
-        margin: 0 auto;
-    }
-    .contact form input{
-        width: 100%;
-        padding: 5px;
-        border-radius: 5px;
-        border: 1px solid #eee;
-    }
-    .contact form input:nth-of-type(3){
-        width: 100%;
-    }
-    .contact form textarea{
-        width: 100%;
-        height: 100px;
-        border-radius: 5px;
-        border: 1px solid #eee;
+@media (min-width:766px) {
+    .wak {
+        margin-top: 5%;
     }
 }
+
 /*End contact*/
 footer{
     background: #333;
@@ -509,7 +390,7 @@ footer p{
     margin: 10px;
 }
 footer p span{
-    color: #ff305b;
+    color: #119643;
 }
 /*Start Up*/
 .up{
@@ -518,7 +399,7 @@ footer p span{
     position: fixed;
     bottom: 5px;
     right: 5px;
-    background-color: #ff305b;
+    background-color: #119643;
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -539,7 +420,7 @@ footer p span{
     text-align: center;
     }
 .spinner {
-    background-color: #ff305b;
+    background-color: #119643;
     margin: 300px auto;
     width: 50px;
     height: 50px;
